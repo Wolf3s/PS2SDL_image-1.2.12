@@ -24,6 +24,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#if defined(__PS2__) && defined(PS2_ROMFS)
+#include <romfs_io.h>
+#endif
 
 #include "SDL_image.h"
 
